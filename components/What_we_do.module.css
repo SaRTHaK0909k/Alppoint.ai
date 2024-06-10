@@ -1,0 +1,23 @@
+.list-square-orange {
+    list-style-type: none; /* Remove default bullet style */
+    color: #FB8C00;
+    font-size: 1.1rem;
+  }
+  
+  .list-square-orange li {
+    position: relative;
+    padding-left: 1.5em; 
+    color: white;/* Adjust the padding as needed */
+  }
+  
+  .list-square-orange li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.3em; /* Adjust the vertical position as needed */
+    width: 0.7em; /* Adjust the width as needed */
+    height: 0.7em; /* Adjust the height as needed */
+    background-color: #FB8C00;
+    transform: rotate(45deg); /* Rotate the square by 45 degrees */
+  }
+  
