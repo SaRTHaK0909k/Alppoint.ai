@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Zoom } from "react-awesome-reveal";
 import styles from "./What_we_do.module.css";
+import ContactSection from "./ContactSection";
 const What_we_do = () => {
   return (
     <div className="p-6 md:p-12 bg-black text-gray-100">
@@ -184,6 +185,83 @@ const What_we_do = () => {
           </div>
         </div>
       </div>
+       
+
+               <hr className="my-20 border-gray-300" /> 
+               <div className="container mx-auto px-4">
+        <div className="text-center text-3xl uppercase">Recent Blogs</div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+          {/* First blog card */}
+          <div className="bg-orange-700 text-white p-4 rounded-lg">
+            <h2 className="text-2xl font-bold mb-4">Blog Title 1</h2>
+            <p className="text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" className="text-blue-500 hover:underline mt-2 block">
+              Read More
+            </a>
+          </div>
+          {/* Second blog card */}
+          <div className="bg-orange-700 text-white p-4 rounded-lg">
+            <h2 className="text-2xl font-bold mb-4">Blog Title 2</h2>
+            <p className="text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" className="text-blue-500 hover:underline mt-2 block">
+              Read More
+            </a>
+          </div>
+          {/* Add more blog cards as needed */}
+        </div>
+      </div>
+
+
+              {/* Recent Blogs sections to be worked on */}
+
+
+              <hr className="my-20 border-gray-300" />
+<div className="">
+  <div className="text-center text-3xl uppercase">Frequently Asked Questions</div>
+</div>
+<div className="container mx-auto px-4 mt-8">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
+    <div>
+      <h3 className="text-xl font-bold mb-4 text-orange-600">Question 1</h3>
+      <p className="mb-4">Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, minus! ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div>
+      <h3 className="text-xl font-bold mb-4 text-orange-600">Question 2</h3>
+      <p className="mb-4">Ut Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nostrum. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div>
+      <h3 className="text-xl font-bold mb-4 text-orange-600">Question 3</h3>
+      <p className="mb-4">Duis Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, accusantium! aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+    <div>
+      <h3 className="text-xl font-bold mb-4 text-orange-600">Question 4</h3>
+      <p className="mb-4">Excepteur  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, est?sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div>
+      <h3 className="text-xl font-bold mb-4 text-orange-600">Question 5</h3>
+      <p className="mb-4">Sed ut  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, illum!perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+    </div>
+    <div>
+      <h3 className="text-xl font-bold mb-4 text-orange-600">Question 6</h3>
+      <p className="mb-4">Nemo  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, sunt provident dolorum molestias reprehenderit sit!enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+    </div>
+    <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
+      <div className="h-full w-px bg-gray-300"></div>
+    </div>
+  </div>
+</div>
+<hr className="my-20 border-gray-300" />
+
+
+            
+              <ContactSection/>
+
     </div>
   );
 };
