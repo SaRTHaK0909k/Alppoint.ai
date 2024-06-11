@@ -1,96 +1,73 @@
 import React from "react";
+import { Phone, Mail } from "lucide-react";
+import { FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
+import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="">
-      <footer className="footer p-10 bg-base-200 text-base-content">
-        <nav>
-          <h3 className="footer-title text-xl">Services</h3>
-          <a className="link link-hover">AI Consulting and Strategy</a>
-          <a className="link link-hover">AI Software Development</a>
-          <a className="link link-hover">Data and Machine Learning Engineering</a>
-          <p className="mt-4">
-            Chat with:
-            <br />
-           <a href="mailto:usinfo@churchease.com">usinfo@churchease.com</a>
-            <br />
-             <a href="mailto:upport@urchease.com">upport@urchease.com</a>
-          </p>
-        </nav>
-        <nav>
-          <h3 className="footer-title text-xl">Resources</h3>
-          <a className="link link-hover">Blogs</a>
-          <a className="link link-hover">Contact Us</a>
-        </nav>
-        <nav>
-          <h3 className="footer-title text-xl">Company</h3>
-          <a className="link link-hover">About Us</a>
-          <a className="link link-hover">Career</a>
-        </nav>
-        <nav>
-          <h3 className="footer-title text-xl">Legal</h3>
-          <a className="link link-hover">Terms of Services</a>
-          <a className="link link-hover">Cookies Policy</a>
-          <a className="link link-hover">Privacy Policy</a>
-          <a className="link link-hover">Regulations</a>
-        </nav>
-      </footer>
-      <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
-        <aside className="items-center grid-flow-col">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            fillRule="evenodd"
-            clipRule="evenodd"
-            className="fill-current"
-          >
-           
-          </svg>
-          <p>
-            ALPPOINT.ai Industries Ltd. <br />
-          </p>
-        </aside>
-        <nav className="md:place-self-center md:justify-self-end">
-          <div className="grid grid-flow-col gap-4">
-            <a href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-              </svg>
-            </a>
-            <a href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-              </svg>
-            </a>
-            <a href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>    
-              </svg>
-            </a>
-          </div>
-        </nav>
-      </footer>
+    <div>
+    <footer className="bg-black text-white py-8">
+    <div className="container mx-auto flex flex-col md:flex-row justify-between">
+      {/* 1st Section */}
+      <div className="md:w-3/12 p-4">
+        <p className="mb-4">
+        Our expert financial consultants provide solutions to help you achieve financial wealth. Trust us to guide you toward a brighter financial future.
+        </p>
+        <div className="flex space-x-4">
+          <a href="#" className="text-white hover:text-orange-600">
+            <FaLinkedin size={24} />
+          </a>
+          <a href="#" className="text-white hover:text-orange-600">
+            <FaTwitter size={24} />
+          </a>
+          <a href="#" className="text-white hover:text-orange-600">
+            <FaFacebook size={24} />
+          </a>
+        </div>
+      </div>
+
+      {/* 2nd Section */}
+      <div className="md:w-3/4 p-4 flex justify-between">
+        <div>
+          <h3 className="text-xl mb-2">Our Services</h3>
+          <ul className="space-y-2">
+            <li><a href="#" className="hover:text-orange-600">Insurance Planning</a></li>
+            <li><a href="#" className="hover:text-orange-600">Estate Planning</a></li>
+            <li><a href="#" className="hover:text-orange-600">Tax Optimization</a></li>
+            <li><a href="#" className="hover:text-orange-600">Debt Management</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="text-xl mb-2">Explore More</h3>
+          <ul className="space-y-2">
+            <li><a href="#" className="hover:text-orange-600">About Us</a></li>
+            <li><a href="#" className="hover:text-orange-600">Blog</a></li>
+            <li><a href="#" className="hover:text-orange-600">Site map</a></li>
+            <li><a href="#" className="hover:text-orange-600">Privacy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="text-xl mb-2">Contact Details</h3>
+          <ul className="space-y-2">
+            <li><a href="#" className="hover:text-orange-600">contact@briofin.com</a></li>
+            <li><a href="#" className="hover:text-orange-600">+1 (555) 123-4567</a></li>
+            <li><a href="#" className="hover:text-orange-600">123 Street, City</a></li>
+            <li><a href="#" className="hover:text-orange-600">Country</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <hr className="border-white my-4" />
+    <div className="container mx-auto flex justify-between items-center">
+      <div>DSCODE 2023 © All rights reserved</div>
+      <div className="flex space-x-4">
+        <a href="#" className="hover:text-orange-600">Terms & Conditions</a>
+        <a href="#" className="hover:text-orange-600">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+    </div>
+
   );
 };
 

@@ -20,94 +20,93 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-black">
-      <form
-        onSubmit={handleSubmit}
-        className="bg-orange-600 p-12 rounded-lg shadow-md w-full max-w-4xl"
-        style={{ width: '70%' }}
-      >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="mb-4">
-            <label className="block text-white text-sm font-bold mb-2" htmlFor="name">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg text-white focus:outline-none"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-white text-sm font-bold mb-2" htmlFor="phone">
-              Phone No.
-            </label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg text-white focus:outline-none"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-white text-sm font-bold mb-2" htmlFor="email">
-              Email Address
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg text-white focus:outline-none"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-white text-sm font-bold mb-2" htmlFor="subject">
-              Subject
-            </label>
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              value={formData.subject}
-              onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg text-white focus:outline-none"
-              required
-            />
+    <>
+      <div className="w-full flex flex-col items-center bg-gray-900 text-white p-8">
+        <div className="w-full max-w-5xl bg-[#291910] p-12 rounded-2xl">
+          <form className="flex flex-col md:flex-row">
+            <div className="md:w-1/2 p-4 space-y-4">
+              <div>
+                <label className="block text-md mb-2" htmlFor="name">
+                  Full Name
+                </label>
+                <input
+                  className="w-full border-none px-3 py-2 border rounded-md text-white"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  value={formData.name}
+                  onChange={handleChange}
+                />
+              </div>
+              <div>
+                <label className="block text-md mb-2" htmlFor="email">
+                  Email Address
+                </label>
+                <input
+                  className="w-full px-3 border-none py-2 border rounded-md text-white"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  value={formData.email}
+                  onChange={handleChange}
+                />
+              </div>
+              <div>
+                <label className="block text-md mb-2" htmlFor="phone">
+                  Phone Number
+                </label>
+                <input
+                  className="w-full px-3 py-2 border rounded-md border-none text-white"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  value={formData.phone}
+                  onChange={handleChange}
+                />
+              </div>
+              <div>
+                <label className="block text-md mb-2" htmlFor="service">
+                  Subject
+                </label>
+                <input
+                  className="w-full px-3 py-2 border rounded-md border-none text-white"
+                  type="text"
+                  id="service"
+                  name="service"
+                  placeholder=""
+                  value={formData.subject}
+                  onChange={handleChange}
+                />
+              </div>
+            </div>
+            <div className="md:w-1/2 p-4 space-y-4">
+              <div>
+                <label className="block text-md mb-2" htmlFor="message">
+                  Your Message
+                </label>
+                <textarea
+                  className="w-full h-40 px-3 py-2 border rounded-md border-none text-white"
+                  id="message"
+                  name="message"
+                  placeholder="Enter your message"
+                  value={formData.message}
+                  onChange={handleChange}
+                />
+              </div>
+            </div>
+          </form>
+          <div className="flex justify-center mt-6">
+            <button className="px-6 py-3 bg-orange-600 text-white rounded-md hover:bg-orange-700 transition-colors">
+              Send Message
+            </button>
           </div>
         </div>
-        <div className="mb-6">
-          <label className="block text-white text-sm font-bold mb-2" htmlFor="message">
-            Your Message
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            className="w-full px-3 py-2 border rounded-lg text-white focus:outline-none"
-            rows="4"
-            required
-          ></textarea>
-        </div>
-        <div className="text-center">
-          <button
-            type="submit"
-            className="bg-white text-orange-600 px-6 py-2 rounded-lg font-bold text-lg"
-          >
-            Get Your Appointment
-          </button>
-        </div>
-      </form>
-    </div>
+      </div>
+      <div className="w-full h-40 bg-orange-700"></div>
+    </>
   );
 };
 
