@@ -18,14 +18,18 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex justify-around items-center p-3 bg-[#141214] shadow-lg relative">
+      <div className="flex justify-around items-center p-5 bg-[#141214] shadow-lg relative">
         <div className="text-2xl">
           <a href="#">Logo</a>
         </div>
         <div className="hidden md:flex">
           <ul className="flex space-x-4">
+          <li className="relative py-2 px-5 cursor-pointer">
+              <Link href="/" className="text-white no-underline">Home</Link>
+              <div className="absolute bottom-0 left-0 w-full h-[2px] bg-orange-600 scale-x-0 origin-bottom-left transition-transform duration-300 ease-in-out hover:scale-x-100"></div>
+            </li>
             <li className="relative py-2 px-5 cursor-pointer">
-              <a href="#" className="text-white no-underline">About Us</a>
+              <Link href="/about" className="text-white no-underline">About Us</Link>
               <div className="absolute bottom-0 left-0 w-full h-[2px] bg-orange-600 scale-x-0 origin-bottom-left transition-transform duration-300 ease-in-out hover:scale-x-100"></div>
             </li>
             <li className="relative py-2 px-5 cursor-pointer">
