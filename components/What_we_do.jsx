@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { Zoom } from "react-awesome-reveal";
 import styles from "./What_we_do.module.css";
-import ContactSection from "./ContactSection";
+import Appointment from "./Appointment";
+import App from "next/app";
 const What_we_do = () => {
   return (
     <div className="p-6 md:p-12 bg-black text-gray-100">
@@ -192,7 +193,7 @@ const What_we_do = () => {
         <div className="text-center text-3xl uppercase">Recent Blogs</div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
           {/* First blog card */}
-          <div className="bg-orange-700 text-white p-4 rounded-lg">
+          <div className="bg-orange-700 text-white p-8 rounded-lg">
             <h2 className="text-2xl font-bold mb-4">Blog Title 1</h2>
             <p className="text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
@@ -203,7 +204,7 @@ const What_we_do = () => {
             </a>
           </div>
           {/* Second blog card */}
-          <div className="bg-orange-700 text-white p-4 rounded-lg">
+          <div className="bg-orange-700 text-white p-8 rounded-lg">
             <h2 className="text-2xl font-bold mb-4">Blog Title 2</h2>
             <p className="text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
@@ -260,7 +261,7 @@ const What_we_do = () => {
 
 
             
-              <ContactSection/>
+              <Appointment/>
 
     </div>
   );
