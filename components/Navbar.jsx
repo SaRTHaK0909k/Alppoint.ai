@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -36,7 +37,7 @@ const Navbar = () => {
               <div className="absolute bottom-0 left-0 w-full h-[2px] bg-orange-600 scale-x-0 origin-bottom-left transition-transform duration-300 ease-in-out hover:scale-x-100"></div>
             </li>
             <li className="relative py-2 px-5 cursor-pointer">
-              <a href="#" className="text-white no-underline">Contact Us</a>
+              <Link href="/contact" className="text-white no-underline">Contact Us</Link>
               <div className="absolute bottom-0 left-0 w-full h-[2px] bg-orange-600 scale-x-0 origin-bottom-left transition-transform duration-300 ease-in-out hover:scale-x-100"></div>
             </li>
             
