@@ -24,24 +24,24 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex">
           <ul className="flex space-x-4">
-          <li className="relative py-2 px-5 cursor-pointer">
+          <li className="relative py-2 px-5 cursor-pointer hover:bg-orange-700 rounded-2xl">
               <Link href="/" className="text-white no-underline">Home</Link>
               <div className="absolute bottom-0 left-0 w-full h-[2px] bg-orange-600 scale-x-0 origin-bottom-left transition-transform duration-300 ease-in-out hover:scale-x-100"></div>
             </li>
-            <li className="relative py-2 px-5 cursor-pointer">
+            <li className="relative py-2 px-5 cursor-pointer hover:bg-orange-700 rounded-2xl">
               <Link href="/about" className="text-white no-underline">About Us</Link>
               <div className="absolute bottom-0 left-0 w-full h-[2px] bg-orange-600 scale-x-0 origin-bottom-left transition-transform duration-300 ease-in-out hover:scale-x-100"></div>
             </li>
-            <li className="relative py-2 px-5 cursor-pointer">
+            <li className="relative py-2 px-5 cursor-pointer hover:bg-orange-700 rounded-2xl">
               <Link href="/service" className="text-white no-underline">What we do</Link>
               <div className="absolute bottom-0 left-0 w-full h-[2px] bg-orange-600 scale-x-0 origin-bottom-left transition-transform duration-300 ease-in-out hover:scale-x-100"></div>
             </li>
-            <li className="relative py-2 px-5 cursor-pointer">
-              <a href="#" className="text-white no-underline">Blog</a>
+            <li className="relative py-2 px-5 cursor-pointer hover:bg-orange-700 rounded-2xl">
+              <a href='/blog' className="text-white no-underline">Blog</a>
               <div className="absolute bottom-0 left-0 w-full h-[2px] bg-orange-600 scale-x-0 origin-bottom-left transition-transform duration-300 ease-in-out hover:scale-x-100"></div>
             </li>
-            <li className="relative py-2 px-5 cursor-pointer">
-              <Link href="/contact" className="text-white no-underline">Contact Us</Link>
+            <li className="relative py-2 px-5 cursor-pointer hover:bg-orange-700 rounded-2xl">
+              <Link href="/contact" className="text-white no-underline ">Contact Us</Link>
               <div className="absolute bottom-0 left-0 w-full h-[2px] bg-orange-600 scale-x-0 origin-bottom-left transition-transform duration-300 ease-in-out hover:scale-x-100"></div>
             </li>
             
@@ -61,19 +61,19 @@ const Navbar = () => {
           <div className="flex flex-col items-center">
             <ul className="space-y-4 text-center">
               <li className="relative py-2 px-5 cursor-pointer">
-                <a href="#" className="text-white no-underline">About Us</a>
+                <Link href='/about' className="text-white no-underline">About Us</Link>
                 <div className="absolute bottom-0 left-0 w-full h-[2px] bg-white scale-x-0 origin-bottom-left transition-transform duration-300 ease-in-out hover:scale-x-100"></div>
               </li>
               <li className="relative py-2 px-5 cursor-pointer">
-                <a href="#" className="text-white no-underline">What we do</a>
+                <Link href='/service' className="text-white no-underline">What we do</Link>
                 <div className="absolute bottom-0 left-0 w-full h-[2px] bg-white scale-x-0 origin-bottom-left transition-transform duration-300 ease-in-out hover:scale-x-100"></div>
               </li>
               <li className="relative py-2 px-5 cursor-pointer">
-                <a href="#" className="text-white no-underline">Blog</a>
+                <Link href='blog' className="text-white no-underline">Blog</Link>
                 <div className="absolute bottom-0 left-0 w-full h-[2px] bg-white scale-x-0 origin-bottom-left transition-transform duration-300 ease-in-out hover:scale-x-100"></div>
               </li>
               <li className="relative py-2 px-5 cursor-pointer">
-                <a href="#" className="text-white no-underline">Contact Us</a>
+                <Link href='/contact' className="text-white no-underline">Contact Us</Link>
                 <div className="absolute bottom-0 left-0 w-full h-[2px] bg-white scale-x-0 origin-bottom-left transition-transform duration-300 ease-in-out hover:scale-x-100"></div>
               </li>
               
