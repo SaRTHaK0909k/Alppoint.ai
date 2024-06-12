@@ -3,6 +3,7 @@ import { CircleCheck } from "lucide-react";
 import { HeartPulse,Swords } from "lucide-react";
 import { LockKeyhole } from "lucide-react";
 import { Scale } from "lucide-react";
+import Banner from "@/components/Banner";
 import React from "react";
 
 const Page = () => {
@@ -113,7 +114,8 @@ const Page = () => {
         </div>
       </div>
 
-      <Image className="mt-3" src="/parallax.png" height={5000} width={5000} />
+      {/* <Image className="mt-3" src="/parallax.png" height={5000} width={5000} /> */}
+        <Banner/>
 
       <div className="flex w-full mt-10 bg-black p-8">
         {/* Left side with content */}

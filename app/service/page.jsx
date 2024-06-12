@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { BriefcaseBusiness,Building2,Car,Users } from "lucide-react";
+import Banner from "@/components/Banner";
 import Appointment from "@/components/Appointment";
 const Page = () => {
   return (
@@ -90,8 +91,8 @@ const Page = () => {
           <Users className="mt-5" size={48} color="#d25228" strokeWidth={1.75} />
         </div>
       </div>
-      <Image className="mt-3 mb-12" src="/parallax.png" height={5000} width={5000} />
-
+      {/* <Image className="mt-3 mb-12" src="/parallax.png" height={5000} width={5000} /> */}
+      <Banner/>
       <Appointment/>
     </div>
   );
