@@ -24,27 +24,40 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex">
           <ul className="flex space-x-4">
+            <Link href='/'>
           <li className="relative py-2 px-5 cursor-pointer hover:bg-orange-700 rounded-2xl">
-              <Link href="/" className="text-white no-underline">Home</Link>
+          <p className="text-white no-underline">Home</p>
               <div className="absolute bottom-0 left-0 w-full h-[2px] bg-orange-600 scale-x-0 origin-bottom-left transition-transform duration-300 ease-in-out hover:scale-x-100"></div>
             </li>
+            </Link>
+
+            <Link href='/about'>
             <li className="relative py-2 px-5 cursor-pointer hover:bg-orange-700 rounded-2xl">
               <Link href="/about" className="text-white no-underline">About Us</Link>
               <div className="absolute bottom-0 left-0 w-full h-[2px] bg-orange-600 scale-x-0 origin-bottom-left transition-transform duration-300 ease-in-out hover:scale-x-100"></div>
             </li>
+            </Link>
+
+            <Link href='/service'>
             <li className="relative py-2 px-5 cursor-pointer hover:bg-orange-700 rounded-2xl">
               <Link href="/service" className="text-white no-underline">What we do</Link>
               <div className="absolute bottom-0 left-0 w-full h-[2px] bg-orange-600 scale-x-0 origin-bottom-left transition-transform duration-300 ease-in-out hover:scale-x-100"></div>
             </li>
+            </Link>
+
+            <Link href='/blog'>
             <li className="relative py-2 px-5 cursor-pointer hover:bg-orange-700 rounded-2xl">
               <a href='/blog' className="text-white no-underline">Blog</a>
               <div className="absolute bottom-0 left-0 w-full h-[2px] bg-orange-600 scale-x-0 origin-bottom-left transition-transform duration-300 ease-in-out hover:scale-x-100"></div>
             </li>
+            </Link>
+
+            <Link href='/contact'>
             <li className="relative py-2 px-5 cursor-pointer hover:bg-orange-700 rounded-2xl">
               <Link href="/contact" className="text-white no-underline ">Contact Us</Link>
               <div className="absolute bottom-0 left-0 w-full h-[2px] bg-orange-600 scale-x-0 origin-bottom-left transition-transform duration-300 ease-in-out hover:scale-x-100"></div>
             </li>
-            
+            </Link>
           </ul>
         </div>
         <div className="border border-[#d36f28] relative inline-block overflow-hidden cursor-pointer hidden md:flex rounded-md">

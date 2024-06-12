@@ -37,7 +37,7 @@ const What_we_do = () => {
               AI Consulting and Strategy
             </h2>
             <h1 className="text-4xl font-bold mb-4 text-white">
-              Navigate AI's complexities with a strategic compass, transforming
+              Navigate AIs complexities with a strategic compass, transforming
               vision into value
             </h1>
           </div>
@@ -189,40 +189,13 @@ const What_we_do = () => {
        
 
                <hr className="my-20 border-gray-300" /> 
-               <div className="container mx-auto px-4">
-        <div className="text-center text-3xl uppercase">Recent Blogs</div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-          {/* First blog card */}
-          <div className="bg-orange-700 text-white p-8 rounded-lg">
-            <h2 className="text-2xl font-bold mb-4">Blog Title 1</h2>
-            <p className="text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <a href="#" className="text-blue-500 hover:underline mt-2 block">
-              Read More
-            </a>
-          </div>
-          {/* Second blog card */}
-          <div className="bg-orange-700 text-white p-8 rounded-lg">
-            <h2 className="text-2xl font-bold mb-4">Blog Title 2</h2>
-            <p className="text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <a href="#" className="text-blue-500 hover:underline mt-2 block">
-              Read More
-            </a>
-          </div>
-          {/* Add more blog cards as needed */}
-        </div>
-      </div>
+              
 
 
               {/* Recent Blogs sections to be worked on */}
 
 
-              <hr className="my-20 border-gray-300" />
+             
 <div className="">
   <div className="text-center text-3xl uppercase">Frequently Asked Questions</div>
 </div>
