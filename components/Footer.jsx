@@ -2,6 +2,7 @@ import React from "react";
 import { Phone, Mail } from "lucide-react";
 import { FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -14,15 +15,15 @@ const Footer = () => {
         Our expert financial consultants provide solutions to help you achieve financial wealth. Trust us to guide you toward a brighter financial future.
         </p>
         <div className="flex space-x-4">
-          <a href="#" className="text-white hover:text-orange-600">
+          <Link href="#" className="text-white hover:text-orange-600">
             <FaLinkedin size={24} />
-          </a>
-          <a href="#" className="text-white hover:text-orange-600">
+          </Link>
+          <Link href="#" className="text-white hover:text-orange-600">
             <FaTwitter size={24} />
-          </a>
-          <a href="#" className="text-white hover:text-orange-600">
+          </Link>
+          <Link href="#" className="text-white hover:text-orange-600">
             <FaFacebook size={24} />
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -31,28 +32,28 @@ const Footer = () => {
         <div>
           <h3 className="text-xl mb-2">Our Services</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:text-orange-600">Insurance Planning</a></li>
-            <li><a href="#" className="hover:text-orange-600">Estate Planning</a></li>
-            <li><a href="#" className="hover:text-orange-600">Tax Optimization</a></li>
-            <li><a href="#" className="hover:text-orange-600">Debt Management</a></li>
+            <li><Link href="#" className="hover:text-orange-600">Insurance Planning</Link></li>
+            <li><Link href="#" className="hover:text-orange-600">Estate Planning</Link></li>
+            <li><Link href="#" className="hover:text-orange-600">Tax Optimization</Link></li>
+            <li><Link href="#" className="hover:text-orange-600">Debt Management</Link></li>
           </ul>
         </div>
         <div>
           <h3 className="text-xl mb-2">Explore More</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:text-orange-600">About Us</a></li>
-            <li><a href="#" className="hover:text-orange-600">Blog</a></li>
-            <li><a href="#" className="hover:text-orange-600">Site map</a></li>
-            <li><a href="#" className="hover:text-orange-600">Privacy</a></li>
+            <li><Link href="#" className="hover:text-orange-600">About Us</Link></li>
+            <li><Link href="#" className="hover:text-orange-600">Blog</Link></li>
+            <li><Link href="#" className="hover:text-orange-600">Site map</Link></li>
+            <li><Link href="#" className="hover:text-orange-600">Privacy</Link></li>
           </ul>
         </div>
         <div>
           <h3 className="text-xl mb-2">Contact Details</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:text-orange-600">contact@briofin.com</a></li>
-            <li><a href="#" className="hover:text-orange-600">+1 (555) 123-4567</a></li>
-            <li><a href="#" className="hover:text-orange-600">123 Street, City</a></li>
-            <li><a href="#" className="hover:text-orange-600">Country</a></li>
+            <li><Link href="#" className="hover:text-orange-600">contact@briofin.com</Link></li>
+            <li><Link href="#" className="hover:text-orange-600">+1 (555) 123-4567</Link></li>
+            <li><Link href="#" className="hover:text-orange-600">123 Street, City</Link></li>
+            <li><Link href="#" className="hover:text-orange-600">Country</Link></li>
           </ul>
         </div>
       </div>
@@ -61,8 +62,8 @@ const Footer = () => {
     <div className="container mx-auto flex justify-between items-center">
       <div>DSCODE 2023 © All rights reserved</div>
       <div className="flex space-x-4">
-        <a href="#" className="hover:text-orange-600">Terms & Conditions</a>
-        <a href="#" className="hover:text-orange-600">Privacy Policy</a>
+        <Link href="#" className="hover:text-orange-600">Terms & Conditions</Link>
+        <Link href="#" className="hover:text-orange-600">Privacy Policy</Link>
       </div>
     </div>
   </footer>

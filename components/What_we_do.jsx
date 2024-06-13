@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Zoom } from "react-awesome-reveal";
 import styles from "./What_we_do.module.css";
+import { BrainCircuit, Atom, BrainCog } from 'lucide-react';
 import Appointment from "./Appointment";
 import App from "next/app";
 const What_we_do = () => {
@@ -23,11 +24,40 @@ const What_we_do = () => {
         error corporis porro ducimus voluptas quod, provident molestias esse
         voluptatibus aliquam culpa eius rerum!
       </p>
-      <Zoom>
+      {/* <Zoom>
         <div className="flex justify-center items-center mt-5">
           <Image src="/whatwedo.png" width={1000} height={1000} />
         </div>
-      </Zoom>
+      </Zoom> */}
+
+      <Zoom>
+      <div className="grid grid-cols-3 gap-4 mt-5 mb-5 p-8">
+      <div className="col-start-3 bg-orange-800 text-white p-10 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110">
+        <BrainCircuit size={48} className="mb-4" />
+        <h2 className="text-xl font-bold">MLOPS</h2>
+      </div>
+      <div className="col-start-2 bg-orange-800 text-white p-10 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110">
+        <BrainCircuit size={48} className="mb-4" />
+        <h2 className="text-xl font-bold">Data Engineering Devices</h2>
+      </div>
+      <div className="bg-orange-800 text-white p-10 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110">
+        <Atom size={48} className="mb-4" />
+        <h2 className="text-xl font-bold">Generative AI Development</h2>
+      </div>
+      <div className="bg-orange-800 text-white p-10 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110">
+        <Atom size={48} className="mb-4" />
+        <h2 className="text-xl font-bold">Computer Vision Solutions</h2>
+      </div>
+      <div className="bg-orange-800 text-white p-10 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110">
+        <BrainCircuit size={48} className="mb-4" />
+        <h2 className="text-xl font-bold">AI Consulting</h2>
+      </div>
+      <div className="bg-orange-800 text-white p-10 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110">
+        <BrainCog size={48} className="mb-4" />
+        <h2 className="text-xl font-bold">NLP Solutions</h2>
+      </div>
+    </div>
+    </Zoom>
       <hr className="my-20 border-gray-300" />{" "}
       {/* Add a horizontal line with margin */}
       <div className="container mx-auto px-4">

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import styles from "./Hero_section.module.css";
-
+import Link from "next/link";
 const Hero_section = () => {
   return (
     <header className={styles.hero}>
@@ -18,12 +18,12 @@ const Hero_section = () => {
           infrastructure, leveraging the power of data for effective decision
           making and creating a unique customer experience.
         </p>
-        <a
+        <Link
           href="#"
           className=" hero-button mt-8 bg-black inline-block px-6 py-3 text-lg md:text-xl font-bold uppercase border border-orange-600 text-orange-600 hover:bg-transparent hover:text-orange-700 transition-colors duration-300 rounded-2xl"
         >
           AI Readiness Assessment
-        </a>
+        </Link>
       </div>
     </header>
   );
