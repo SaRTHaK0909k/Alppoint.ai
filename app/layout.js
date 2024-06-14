@@ -3,6 +3,7 @@ import Head from "next/head";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Navbarr from "@/components/Navbarr";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,8 +22,8 @@ export default function RootLayout({ children }) {
           `}
         </style>
       </Head>
-      <body className={`${inter.className} font-poppins`}>
-        <Navbar />
+      <body className={`${inter.className} font-poppins bg-[#201F1F] `}>
+        <Navbarr />
         {children}
         <Footer />
       </body>

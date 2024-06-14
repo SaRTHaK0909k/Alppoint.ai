@@ -5,9 +5,10 @@ import styles from "./What_we_do.module.css";
 import { BrainCircuit, Atom, BrainCog } from 'lucide-react';
 import Appointment from "./Appointment";
 import App from "next/app";
+import Cards from "./Cards";
 const What_we_do = () => {
   return (
-    <div className="p-6 md:p-12 bg-black text-gray-100">
+    <div className="p-6 md:p-12 bg-[#201F1F] text-gray-100">
       <h1 className="text-3xl md:text-5xl font-bold mb-6 text-center">
         What We Do
       </h1>
@@ -31,32 +32,7 @@ const What_we_do = () => {
       </Zoom> */}
 
       <Zoom>
-      <div className="grid grid-cols-3 gap-4 mt-5 mb-5 p-8">
-      <div className="col-start-3 bg-orange-800 text-white p-10 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110">
-        <BrainCircuit size={48} className="mb-4" />
-        <h2 className="text-xl font-bold">MLOPS</h2>
-      </div>
-      <div className="col-start-2 bg-orange-800 text-white p-10 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110">
-        <BrainCircuit size={48} className="mb-4" />
-        <h2 className="text-xl font-bold">Data Engineering Devices</h2>
-      </div>
-      <div className="bg-orange-800 text-white p-10 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110">
-        <Atom size={48} className="mb-4" />
-        <h2 className="text-xl font-bold">Generative AI Development</h2>
-      </div>
-      <div className="bg-orange-800 text-white p-10 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110">
-        <Atom size={48} className="mb-4" />
-        <h2 className="text-xl font-bold">Computer Vision Solutions</h2>
-      </div>
-      <div className="bg-orange-800 text-white p-10 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110">
-        <BrainCircuit size={48} className="mb-4" />
-        <h2 className="text-xl font-bold">AI Consulting</h2>
-      </div>
-      <div className="bg-orange-800 text-white p-10 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110">
-        <BrainCog size={48} className="mb-4" />
-        <h2 className="text-xl font-bold">NLP Solutions</h2>
-      </div>
-    </div>
+      <Cards/>
     </Zoom>
       <hr className="my-20 border-gray-300" />{" "}
       {/* Add a horizontal line with margin */}
@@ -180,7 +156,7 @@ const What_we_do = () => {
               position: "relative",
             }}
           >
-            <Image
+            {/* <Image
               src="/orange-circle-1462825_1920.png"
               height={500}
               width={500}
@@ -190,7 +166,10 @@ const What_we_do = () => {
             <div className="absolute z-10 text-white font-bold text-4xl">
               <p className="text-center items-center">98%</p>
               <p className="text-xs mt-2 uppercase">High Performance</p>
-            </div>
+            </div> */}
+            <Image src='/circlemain.png'
+            height={100}
+            width={500}/>
             <div
               style={{
                 position: "absolute",
