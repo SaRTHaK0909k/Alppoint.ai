@@ -52,7 +52,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-        <ContactSection/>
+      <ContactSection />
     </div>
   );
 };

@@ -1,87 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-
-
-
-
-
-
-.cardContainer {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
-  margin: auto;
-  gap: 1em;;
-}
-
-
-.flip {
-  position: relative;
-  display: inline-block;
-  background: rgb(119, 47, 5);
-  margin-right: 2px;
-  margin-bottom: 1em;
-  text-align: center;
-  margin: auto;
-  width: 400px;
-  height: 220px;
+/* Cards.module.css */
+.flipCard {
   perspective: 1000px;
-  cursor: pointer;
-  > .front {
-    
-  }
-  > .back {
-    display: block;
-    transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
-    transition-duration: .5s;
-    transition-property: transform, opacity;
-    color: white;
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-
-    width: 100%;
-    height: 100%;
-    background-size: cover !important;
-    background-position: center !important;
-    padding: 1em 2em;
-    background: rgb(119, 47, 5);
-    
-  }
-  > .front {
-    transform: rotateY(0deg);
-  }
-  > .back {
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    transform: rotateY(-180deg);
-  }
-  &:hover {
-    > .front {
-      transform: rotateY(180deg);
-    }
-    > .back {
-      opacity: 1;
-      transform: rotateY(0deg);
-    }
-  }
-  &.flipVertical {
-    > .back {
-      transform: rotateX(-180deg);
-    }
-    &:hover {
-      > .front {
-        transform: rotateX(180deg);
-      }
-      > .back {
-        transform: rotateX(0deg);
-      }
-    }
-  }
 }
 
-.textShadow {
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+.flipCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flipCard:hover .flipCardInner {
+  transform: rotateY(180deg);
+}
+
+.flipCardFront, .flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flipCardFront {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flipCardBack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
 }

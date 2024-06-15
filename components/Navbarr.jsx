@@ -1,10 +1,12 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation"; // Changed from next/navigation to next/router
 import Image from "next/image";
+
 const Navbarr = () => {
   const router = useRouter();
+  
 
   const handleGetConsultationClick = (e) => {
     e.preventDefault();
@@ -23,7 +25,12 @@ const Navbarr = () => {
       <div className="navbar bg-black">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost lg:hidden"
+             
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -41,7 +48,9 @@ const Navbarr = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className={`menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 
+                
+              `}
             >
               <li className="hover:bg-orange-700 rounded-md">
                 <Link href="/">Home</Link>
@@ -83,8 +92,8 @@ const Navbarr = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
-          <Link href="#" onClick={handleGetConsultationClick} className="btn">
+        <div className="navbar-end ">
+          <Link href="#" className='text-orange-600 btn border  border-orange-600' onClick={handleGetConsultationClick} >
             Get Consultation
           </Link>
         </div>
