@@ -2,11 +2,13 @@ import React from "react";
 import Image from "next/image";
 import { Zoom } from "react-awesome-reveal";
 import styles from "./What_we_do.module.css";
+import { BrainCircuit, Atom, BrainCog } from 'lucide-react';
 import Appointment from "./Appointment";
 import App from "next/app";
+import Cards from "./Cards";
 const What_we_do = () => {
   return (
-    <div className="p-6 md:p-12 bg-black text-gray-100">
+    <div className="p-6 md:p-12 bg-[#201F1F] text-gray-100">
       <h1 className="text-3xl md:text-5xl font-bold mb-6 text-center">
         What We Do
       </h1>
@@ -23,11 +25,15 @@ const What_we_do = () => {
         error corporis porro ducimus voluptas quod, provident molestias esse
         voluptatibus aliquam culpa eius rerum!
       </p>
-      <Zoom>
+      {/* <Zoom>
         <div className="flex justify-center items-center mt-5">
           <Image src="/whatwedo.png" width={1000} height={1000} />
         </div>
-      </Zoom>
+      </Zoom> */}
+
+      <Zoom>
+      <Cards/>
+    </Zoom>
       <hr className="my-20 border-gray-300" />{" "}
       {/* Add a horizontal line with margin */}
       <div className="container mx-auto px-4">
@@ -150,7 +156,7 @@ const What_we_do = () => {
               position: "relative",
             }}
           >
-            <Image
+            {/* <Image
               src="/orange-circle-1462825_1920.png"
               height={500}
               width={500}
@@ -160,7 +166,10 @@ const What_we_do = () => {
             <div className="absolute z-10 text-white font-bold text-4xl">
               <p className="text-center items-center">98%</p>
               <p className="text-xs mt-2 uppercase">High Performance</p>
-            </div>
+            </div> */}
+            <Image src='/circlemain.png'
+            height={100}
+            width={500}/>
             <div
               style={{
                 position: "absolute",

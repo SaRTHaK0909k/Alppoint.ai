@@ -93,9 +93,9 @@ export default async function Home() {
         </div>
       </main>
 
-      <footer className="text-center p-5 bg-gray-800">
+      {/* <footer className="text-center p-5 bg-gray-800">
         <p>© 2024 Your Company. All rights reserved.</p>
-      </footer>
+      </footer> */}
     </div>
   );
 }
