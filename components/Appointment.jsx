@@ -29,7 +29,7 @@ const Appointment = () => {
       style={{ backgroundImage: `url(${contactImg.src})` }} // Use contactImg.src for the image URL
     >
       <div className="w-full flex flex-col items-center  text-white p-8">
-        <div className="w-full max-w-5xl bg-[#FF6600B2] p-8 rounded-lg shadow-md">
+        <div className="w-full max-w-5xl bg-orange-700 p-8 rounded-lg shadow-md">
           <form className="flex flex-col md:flex-row md:space-x-8" onSubmit={handleSubmit}>
             <div className="md:w-1/2 space-y-4 mb-4 md:mb-0">
               <div>

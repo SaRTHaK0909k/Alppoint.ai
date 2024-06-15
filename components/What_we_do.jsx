@@ -2,13 +2,13 @@ import React from "react";
 import Image from "next/image";
 import { Zoom } from "react-awesome-reveal";
 import styles from "./What_we_do.module.css";
-import { BrainCircuit, Atom, BrainCog } from 'lucide-react';
+import { BrainCircuit, Atom, BrainCog, CircleCheck } from "lucide-react";
 import Appointment from "./Appointment";
 import App from "next/app";
 import Cards from "./Cards";
 const What_we_do = () => {
   return (
-    <div className="p-6 md:p-12 bg-[#201F1F] text-gray-100">
+    <div className="p-6 md:p-12 bg-black text-gray-100">
       <h1 className="text-3xl md:text-5xl font-bold mb-6 text-center">
         What We Do
       </h1>
@@ -30,10 +30,9 @@ const What_we_do = () => {
           <Image src="/whatwedo.png" width={1000} height={1000} />
         </div>
       </Zoom> */}
-
       <Zoom>
-      <Cards/>
-    </Zoom>
+        <Cards />
+      </Zoom>
       <hr className="my-20 border-gray-300" />{" "}
       {/* Add a horizontal line with margin */}
       <div className="container mx-auto px-4">
@@ -48,13 +47,13 @@ const What_we_do = () => {
             </h1>
           </div>
           <div className="text-center md:text-left">
-            <p className="mb-4 bg-orange-700 text-white p-4 rounded-lg relative pl-8">
-              <span className="absolute h-4 w-4 bg-black rounded-lg left-2 top-1/2 transform -translate-y-1/2"></span>
+            <p className="mb-4 bg-orange-700 text-white p-4 rounded-lg flex items-center">
+              <CircleCheck color="#000000" strokeWidth={4} className="mr-2" />
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <p className="mb-4 bg-orange-700 text-white p-4 rounded-lg relative pl-8">
-              <span className="absolute h-4 w-4 bg-black rounded-lg left-2 top-1/2 transform -translate-y-1/2"></span>
+            <p className="mb-4 bg-orange-700 text-white p-4 rounded-lg flex items-center">
+              <CircleCheck color="#000000" strokeWidth={4} className="mr-2" />
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
@@ -74,13 +73,13 @@ const What_we_do = () => {
             </h1>
           </div>
           <div className="text-center md:text-left">
-            <p className="mb-4 bg-orange-700 text-white p-4 rounded-lg relative pl-8">
-              <span className="absolute h-4 w-4 bg-black rounded-lg left-2 top-1/2 transform -translate-y-1/2"></span>
+            <p className="mb-4 bg-orange-700 text-white p-4 rounded-lg flex items-center">
+              <CircleCheck color="#000000" strokeWidth={4} className="mr-2" />
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <p className="mb-4 bg-orange-700 text-white p-4 rounded-lg relative pl-8">
-              <span className="absolute h-4 w-4 bg-black rounded-lg left-2 top-1/2 transform -translate-y-1/2"></span>
+            <p className="mb-4 bg-orange-700 text-white p-4 rounded-lg flex items-center">
+              <CircleCheck color="#000000" strokeWidth={4} className="mr-2" />
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
@@ -101,13 +100,13 @@ const What_we_do = () => {
             </h1>
           </div>
           <div className="text-center md:text-left">
-            <p className="mb-4 bg-orange-700 text-white p-4 rounded-lg relative pl-8">
-              <span className="absolute h-4 w-4 bg-black rounded-lg left-2 top-1/2 transform -translate-y-1/2"></span>
+            <p className="mb-4 bg-orange-700 text-white p-4 rounded-lg flex items-center">
+              <CircleCheck color="#000000" strokeWidth={4} className="mr-2" />
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <p className="mb-4 bg-orange-700 text-white p-4 rounded-lg relative pl-8">
-              <span className="absolute h-4 w-4 bg-black rounded-lg left-2 top-1/2 transform -translate-y-1/2"></span>
+            <p className="mb-4 bg-orange-700 text-white p-4 rounded-lg flex items-center">
+              <CircleCheck color="#000000" strokeWidth={4} className="mr-2" />
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
@@ -167,9 +166,7 @@ const What_we_do = () => {
               <p className="text-center items-center">98%</p>
               <p className="text-xs mt-2 uppercase">High Performance</p>
             </div> */}
-            <Image src='/circlemain.png'
-            height={100}
-            width={500}/>
+            <Image src="/circlemain.png" height={100} width={500} />
             <div
               style={{
                 position: "absolute",
@@ -195,56 +192,83 @@ const What_we_do = () => {
           </div>
         </div>
       </div>
-       
-
-               <hr className="my-20 border-gray-300" /> 
-              
-
-
-              {/* Recent Blogs sections to be worked on */}
-
-
-             
-<div className="">
-  <div className="text-center text-3xl uppercase">Frequently Asked Questions</div>
-</div>
-<div className="container mx-auto px-4 mt-8">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
-    <div>
-      <h3 className="text-xl font-bold mb-4 text-orange-600">Question 1</h3>
-      <p className="mb-4">Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, minus! ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div>
-      <h3 className="text-xl font-bold mb-4 text-orange-600">Question 2</h3>
-      <p className="mb-4">Ut Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nostrum. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div>
-      <h3 className="text-xl font-bold mb-4 text-orange-600">Question 3</h3>
-      <p className="mb-4">Duis Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, accusantium! aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
-    <div>
-      <h3 className="text-xl font-bold mb-4 text-orange-600">Question 4</h3>
-      <p className="mb-4">Excepteur  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, est?sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <div>
-      <h3 className="text-xl font-bold mb-4 text-orange-600">Question 5</h3>
-      <p className="mb-4">Sed ut  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, illum!perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-    </div>
-    <div>
-      <h3 className="text-xl font-bold mb-4 text-orange-600">Question 6</h3>
-      <p className="mb-4">Nemo  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, sunt provident dolorum molestias reprehenderit sit!enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-    </div>
-    <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
-      <div className="h-full w-px bg-gray-300"></div>
-    </div>
-  </div>
-</div>
-<hr className="my-20 border-gray-300" />
-
-
-            
-              <Appointment/>
-
+      <hr className="my-20 border-gray-300" />
+      {/* Recent Blogs sections to be worked on */}
+      <div className="">
+        <div className="text-center text-3xl uppercase">
+          Frequently Asked Questions
+        </div>
+      </div>
+      <div className="container mx-auto px-4 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
+          <div>
+            <h3 className="text-xl font-bold mb-4 text-orange-600">
+              Question 1
+            </h3>
+            <p className="mb-4">
+              Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Vitae, minus! ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold mb-4 text-orange-600">
+              Question 2
+            </h3>
+            <p className="mb-4">
+              Ut Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Laboriosam, nostrum. enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold mb-4 text-orange-600">
+              Question 3
+            </h3>
+            <p className="mb-4">
+              Duis Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Itaque, accusantium! aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold mb-4 text-orange-600">
+              Question 4
+            </h3>
+            <p className="mb-4">
+              Excepteur Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Facere, est?sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold mb-4 text-orange-600">
+              Question 5
+            </h3>
+            <p className="mb-4">
+              Sed ut Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptas, illum!perspiciatis unde omnis iste natus error sit
+              voluptatem accusantium doloremque laudantium.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold mb-4 text-orange-600">
+              Question 6
+            </h3>
+            <p className="mb-4">
+              Nemo Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quis, sunt provident dolorum molestias reprehenderit sit!enim
+              ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+            </p>
+          </div>
+          <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
+            <div className="h-full w-px bg-gray-300"></div>
+          </div>
+        </div>
+      </div>
+      <hr className="my-20 border-gray-300" />
+      <Appointment />
     </div>
   );
 };

@@ -20,7 +20,7 @@ const Hero_section = () => {
         </p>
         <Link
           href="#"
-          className=" hero-button mt-8 bg-black inline-block px-6 py-3 text-lg md:text-xl font-bold uppercase border border-orange-600 text-orange-600 hover:bg-transparent hover:text-orange-700 transition-colors duration-300 rounded-2xl"
+          className=" hero-button mt-8 bg-black text-white inline-block px-6 py-3 text-lg md:text-xl font-bold uppercase border border-orange-600 text-orange-600 hover:bg-transparent hover:text-orange-700 transition-colors duration-300 rounded-2xl"
         >
           AI Readiness Assessment
         </Link>

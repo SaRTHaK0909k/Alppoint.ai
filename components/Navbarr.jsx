@@ -6,7 +6,6 @@ import Image from "next/image";
 
 const Navbarr = () => {
   const router = useRouter();
-  
 
   const handleGetConsultationClick = (e) => {
     e.preventDefault();
@@ -22,15 +21,10 @@ const Navbarr = () => {
 
   return (
     <div>
-      <div className="navbar bg-black">
+      <div className="navbar bg-black z-20">
         <div className="navbar-start">
           <div className="dropdown">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost lg:hidden"
-             
-            >
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -48,9 +42,7 @@ const Navbarr = () => {
             </div>
             <ul
               tabIndex={0}
-              className={`menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 
-                
-              `}
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li className="hover:bg-orange-700 rounded-md">
                 <Link href="/">Home</Link>
@@ -58,8 +50,19 @@ const Navbarr = () => {
               <li className="hover:bg-orange-700 rounded-md">
                 <Link href="/about">About Us</Link>
               </li>
-              <li className="hover:bg-orange-700 rounded-md">
-                <Link href="/service">What We do</Link>
+              <li className="hover:bg-orange-700 rounded-md group">
+                <Link href="/service">What We Do</Link>
+                <ul className="p-2 bg-base-100 shadow-lg rounded-box mt-2 hidden group-hover:block">
+                  <li className="hover:bg-orange-700 rounded-md z-10">
+                    <Link href="/computervisionsolution">Service 1</Link>
+                  </li>
+                  <li className="hover:bg-orange-700 rounded-md z-10">
+                    <Link href="/computervisionsolution">Service 2</Link>
+                  </li>
+                  <li className="hover:bg-orange-700 rounded-md z-10">
+                    <Link href="/computervisionsolution">Service 3</Link>
+                  </li>
+                </ul>
               </li>
               <li className="hover:bg-orange-700 rounded-md">
                 <Link href="/blog">Blog</Link>
@@ -69,20 +72,31 @@ const Navbarr = () => {
               </li>
             </ul>
           </div>
-          <Link href="" className="btn btn-ghost text-xl">
+          <Link href="/" className="btn btn-ghost text-xl">
             <Image src="/logo.png" width={150} height={110} alt="logo" />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 gap-6 ">
+          <ul className="menu menu-horizontal px-1 gap-6">
             <li className="hover:bg-orange-700 rounded-md">
               <Link href="/">Home</Link>
             </li>
             <li className="hover:bg-orange-700 rounded-md">
               <Link href="/about">About Us</Link>
             </li>
-            <li className="hover:bg-orange-700 rounded-md">
-              <Link href="/service">What We do</Link>
+            <li className="hover:bg-orange-700 rounded-md group relative">
+              <Link href="/service">What We Do</Link>
+              <ul className="menu menu-compact p-2 shadow bg-base-100 rounded-box mt-2 hidden absolute group-hover:block">
+                <li className="hover:bg-orange-700 rounded-md">
+                  <Link href="/computervisionsolution">Service 1</Link>
+                </li>
+                <li className="hover:bg-orange-700 rounded-md">
+                  <Link href="/computervisionsolution">Service 2</Link>
+                </li>
+                <li className="hover:bg-orange-700 rounded-md">
+                  <Link href="/computervisionsolution">Service 3</Link>
+                </li>
+              </ul>
             </li>
             <li className="hover:bg-orange-700 rounded-md">
               <Link href="/blog">Blog</Link>
@@ -92,8 +106,12 @@ const Navbarr = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end ">
-          <Link href="#" className='text-orange-600 btn border  border-orange-600' onClick={handleGetConsultationClick} >
+        <div className="navbar-end">
+          <Link
+            href="#"
+            className="text-orange-600 btn border border-orange-600"
+            onClick={handleGetConsultationClick}
+          >
             Get Consultation
           </Link>
         </div>

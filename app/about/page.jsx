@@ -10,7 +10,7 @@ const Page = () => {
   return (
     <div className="flex flex-col items-center mt-10 " >
       {/* Existing Flexbox */}
-      <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col lg:flex-row bg-[#532d1d80]">
         {/* Left side with text content */}
         <div className="w-full lg:w-1/3 p-4 m-auto pl-8">
           <h1 className="text-5xl">
@@ -34,6 +34,7 @@ const Page = () => {
         </div>
       </div>
       {/* Centered div */}
+      
       <div className="w-full p-4 text-center p-8">
         <h2 className="text-3xl mt-10 mb-4">
           <span className="gradient-text">Our </span>
@@ -115,7 +116,7 @@ const Page = () => {
       {/* <Image className="mt-3" src="/parallax.png" height={5000} width={5000} /> */}
       <Banner />
 
-      <div className="flex flex-col lg:flex-row w-full mt-10 bg-[#201F1F] p-8">
+      <div className="flex flex-col lg:flex-row w-full mt-10 bg-black p-8">
         {/* Left side with content */}
         <div className="w-full lg:w-1/2 p-8">
           <h2 className="text-3xl ">What We</h2>

@@ -4,8 +4,8 @@ import { BrainCircuit, Atom, BrainCog } from 'lucide-react';
 
 const FlipCards = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 mt-5 mb-5 p-8">
-      <div className={`${styles.flipCard} col-start-3 bg-orange-800 text-white p-24 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110`}>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-5 mb-5 p-4 md:p-8">
+      <div className={`${styles.flipCard} bg-orange-800 text-white p-8 md:p-12 lg:p-16 xl:p-24 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300`}>
         <div className={styles.flipCardInner}>
           <div className={`${styles.flipCardFront} flex flex-col items-center justify-center`}>
             <BrainCircuit size={48} className="mb-4" />
@@ -16,9 +16,9 @@ const FlipCards = () => {
           </div>
         </div>
       </div>
-      <div className={`${styles.flipCard} bg-orange-800 text-white p-24 rounded shadow-lg flex flex-col col-start-2 items-center justify-center transform transition-transform duration-300 hover:scale-110`}>
+      <div className={`${styles.flipCard} bg-orange-800 text-white p-8 md:p-12 lg:p-16 xl:p-24 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300`}>
         <div className={styles.flipCardInner}>
-          <div className={`${styles.flipCardFront} flex flex-col  items-center justify-center`}>
+          <div className={`${styles.flipCardFront} flex flex-col items-center justify-center`}>
             <BrainCircuit size={48} className="mb-4" />
             <h2 className="text-xl font-bold">Data Engineering Devices</h2>
           </div>
@@ -27,7 +27,7 @@ const FlipCards = () => {
           </div>
         </div>
       </div>
-      <div className={`${styles.flipCard} bg-orange-800 text-white p-24 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110`}>
+      <div className={`${styles.flipCard} bg-orange-800 text-white p-8 md:p-12 lg:p-16 xl:p-24 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300`}>
         <div className={styles.flipCardInner}>
           <div className={`${styles.flipCardFront} flex flex-col items-center justify-center`}>
             <Atom size={48} className="mb-4" />
@@ -38,7 +38,7 @@ const FlipCards = () => {
           </div>
         </div>
       </div>
-      <div className={`${styles.flipCard} bg-orange-800 text-white p-24 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110`}>
+      <div className={`${styles.flipCard} bg-orange-800 text-white p-8 md:p-12 lg:p-16 xl:p-24 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300`}>
         <div className={styles.flipCardInner}>
           <div className={`${styles.flipCardFront} flex flex-col items-center justify-center`}>
             <Atom size={48} className="mb-4" />
@@ -49,7 +49,7 @@ const FlipCards = () => {
           </div>
         </div>
       </div>
-      <div className={`${styles.flipCard} bg-orange-800 text-white p-24 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110`}>
+      <div className={`${styles.flipCard} bg-orange-800 text-white p-8 md:p-12 lg:p-16 xl:p-24 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300`}>
         <div className={styles.flipCardInner}>
           <div className={`${styles.flipCardFront} flex flex-col items-center justify-center`}>
             <BrainCircuit size={48} className="mb-4" />
@@ -60,7 +60,7 @@ const FlipCards = () => {
           </div>
         </div>
       </div>
-      <div className={`${styles.flipCard} bg-orange-800 text-white p-24 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110`}>
+      <div className={`${styles.flipCard} bg-orange-800 text-white p-8 md:p-12 lg:p-16 xl:p-24 rounded shadow-lg flex flex-col items-center justify-center transform transition-transform duration-300`}>
         <div className={styles.flipCardInner}>
           <div className={`${styles.flipCardFront} flex flex-col items-center justify-center`}>
             <BrainCog size={48} className="mb-4" />
