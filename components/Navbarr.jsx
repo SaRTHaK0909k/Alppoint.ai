@@ -1,12 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation"; // Changed from next/navigation to next/router
+import { useRouter } from "next/navigation"; 
 import Image from "next/image";
 
 const Navbarr = () => {
   const router = useRouter();
-  
 
   const handleGetConsultationClick = (e) => {
     e.preventDefault();
@@ -22,15 +21,10 @@ const Navbarr = () => {
 
   return (
     <div>
-      <div className="navbar bg-black">
+      <div className="navbar bg-black z-20">
         <div className="navbar-start">
           <div className="dropdown">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost lg:hidden"
-             
-            >
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -48,9 +42,7 @@ const Navbarr = () => {
             </div>
             <ul
               tabIndex={0}
-              className={`menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 
-                
-              `}
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li className="hover:bg-orange-700 rounded-md">
                 <Link href="/">Home</Link>
@@ -58,8 +50,9 @@ const Navbarr = () => {
               <li className="hover:bg-orange-700 rounded-md">
                 <Link href="/about">About Us</Link>
               </li>
-              <li className="hover:bg-orange-700 rounded-md">
-                <Link href="/service">What We do</Link>
+              <li className="hover:bg-orange-700 rounded-md group">
+                <Link href="/service">What We Do</Link>
+                
               </li>
               <li className="hover:bg-orange-700 rounded-md">
                 <Link href="/blog">Blog</Link>
@@ -69,20 +62,21 @@ const Navbarr = () => {
               </li>
             </ul>
           </div>
-          <Link href="" className="btn btn-ghost text-xl">
+          <Link href="/" className="btn btn-ghost text-xl">
             <Image src="/logo.png" width={150} height={110} alt="logo" />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 gap-6 ">
+          <ul className="menu menu-horizontal px-1 gap-6">
             <li className="hover:bg-orange-700 rounded-md">
               <Link href="/">Home</Link>
             </li>
             <li className="hover:bg-orange-700 rounded-md">
               <Link href="/about">About Us</Link>
             </li>
-            <li className="hover:bg-orange-700 rounded-md">
-              <Link href="/service">What We do</Link>
+            <li className="hover:bg-orange-700 rounded-md group relative">
+              <Link href="/service">What We Do</Link>
+              
             </li>
             <li className="hover:bg-orange-700 rounded-md">
               <Link href="/blog">Blog</Link>
@@ -92,8 +86,12 @@ const Navbarr = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end ">
-          <Link href="#" className='text-orange-600 btn border  border-orange-600' onClick={handleGetConsultationClick} >
+        <div className="navbar-end">
+          <Link
+            href="#"
+            className="text-orange-600 btn border border-orange-600"
+            onClick={handleGetConsultationClick}
+          >
             Get Consultation
           </Link>
         </div>

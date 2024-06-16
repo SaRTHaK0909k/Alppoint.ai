@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
           `}
         </style>
       </Head>
-      <body className={`${inter.className} font-poppins bg-[#201F1F] `}>
+      <body className={`${inter.className} font-poppins bg-black `}>
         <Navbarr />
         {children}
         <Footer />
