@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation"; // Changed from next/navigation to next/router
+import { useRouter } from "next/navigation"; 
 import Image from "next/image";
 
 const Navbarr = () => {
@@ -52,17 +52,7 @@ const Navbarr = () => {
               </li>
               <li className="hover:bg-orange-700 rounded-md group">
                 <Link href="/service">What We Do</Link>
-                <ul className="p-2 bg-base-100 shadow-lg rounded-box mt-2 hidden group-hover:block">
-                  <li className="hover:bg-orange-700 rounded-md z-10">
-                    <Link href="/computervisionsolution">Service 1</Link>
-                  </li>
-                  <li className="hover:bg-orange-700 rounded-md z-10">
-                    <Link href="/computervisionsolution">Service 2</Link>
-                  </li>
-                  <li className="hover:bg-orange-700 rounded-md z-10">
-                    <Link href="/computervisionsolution">Service 3</Link>
-                  </li>
-                </ul>
+                
               </li>
               <li className="hover:bg-orange-700 rounded-md">
                 <Link href="/blog">Blog</Link>
@@ -86,17 +76,7 @@ const Navbarr = () => {
             </li>
             <li className="hover:bg-orange-700 rounded-md group relative">
               <Link href="/service">What We Do</Link>
-              <ul className="menu menu-compact p-2 shadow bg-base-100 rounded-box mt-2 hidden absolute group-hover:block">
-                <li className="hover:bg-orange-700 rounded-md">
-                  <Link href="/computervisionsolution">Service 1</Link>
-                </li>
-                <li className="hover:bg-orange-700 rounded-md">
-                  <Link href="/computervisionsolution">Service 2</Link>
-                </li>
-                <li className="hover:bg-orange-700 rounded-md">
-                  <Link href="/computervisionsolution">Service 3</Link>
-                </li>
-              </ul>
+              
             </li>
             <li className="hover:bg-orange-700 rounded-md">
               <Link href="/blog">Blog</Link>
